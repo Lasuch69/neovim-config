@@ -1,0 +1,16 @@
+local Lsp = require "utils.lsp"
+
+return {
+  cmd = { "pyright-langserver", "--stdio" },
+  on_attach = Lsp.on_attach,
+  filetypes = { "python" },
+  settings = {
+    python = {
+      analysis = {
+        autoSearchPaths = true,
+        useLibraryCodeForTypes = true,
+        diagnosticMode = "openFilesOnly",
+      },
+    },
+  },
+}
