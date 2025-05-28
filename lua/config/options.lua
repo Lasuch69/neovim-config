@@ -1,6 +1,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Set coloscheme
+vim.cmd("colorscheme kanagawa-dragon")
+
 local opt = vim.opt
 
 opt.autowrite = true -- Enable auto write

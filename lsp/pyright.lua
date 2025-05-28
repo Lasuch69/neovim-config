@@ -1,8 +1,8 @@
-local Lsp = require "utils.lsp"
+local lsp = require "utils.lsp"
 
 return {
   cmd = { "pyright-langserver", "--stdio" },
-  on_attach = Lsp.on_attach,
+  on_attach = lsp.on_attach,
   filetypes = { "python" },
   settings = {
     python = {
